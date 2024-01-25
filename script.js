@@ -110,13 +110,13 @@ const catchEdit = (i) => {
 
              <div class="mb-3">
                 <label for="jeu" class="form-label">Edit jeu</label>
-                <input type="number" class="form-control" id="jeu" aria-describedby="jeu" value="${listGames[i].jeu}" >
+                <input type="number" class="form-control" id="jeu" aria-describedby="Jeu" value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 
              <div class="mb-3">
                 <label for="imageUrl" class="form-label">Edit Image Url</label>
-                <input type="text" class="form-control" id="imageUrl" aria-describedby="jeu" value="${listGames[i].imageUrl}" >
+                <input type="text" class="form-control" id="imageUrl" aria-describedby="Jeu" value="${listGames[i].imageUrl}" >
                 <img src="${listGames[i].imageUrl}" class="img-thumbnail w-50 mt-2" />
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
@@ -168,7 +168,7 @@ btnEditArray.forEach((btn, index) => {
 			document.querySelectorAll(".card-title")[index].innerHTML = newTitle
 			document.querySelectorAll(".card-text")[
 				index
-			].innerHTML = `Jeu: ${newJeu}`
+			].innerHTML = `${newJeu}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 		})
