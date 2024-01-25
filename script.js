@@ -12,7 +12,7 @@ const listGames = [
 		title: "Clementine",
 		jeu: "The Walking Dead",
 		imageUrl:
-			"https://static.wikia.nocookie.net/the-final-season-franchises/images/b/ba/Clementine_Marsh.jpg/revision/latest?cb=20201104064724",
+			"https://cdnb.artstation.com/p/assets/covers/images/013/075/499/large/grace-hsin-clem-thumbnail.jpg?1537941224",
 	},
 	{
 		title: "V",
@@ -37,7 +37,7 @@ const listGames = [
 		title: "Chun-Li",
 		jeu: "Street Fighter",
 		imageUrl:
-			"https://i.pinimg.com/736x/ee/f6/75/eef6750a04d883f5f8b09fcea2993e1b.jpg",
+			"https://lemagjeuxhightech.com/wp-content/uploads/2023/05/SF6-World-Tour-Master-Chun-Li-770x472.png",
 	},
 ]
 
