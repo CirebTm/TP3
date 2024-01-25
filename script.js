@@ -12,7 +12,7 @@ const listGames = [
 		title: "Clementine",
 		jeu: "The Walking Dead",
 		imageUrl:
-			"https://static.wikia.nocookie.net/the-final-season-franchises/images/b/ba/Clementine_Marsh.jpg/revision/latest?cb=20201104064724",
+			"hhttps://static.wikia.nocookie.net/the-final-season-franchises/images/b/ba/Clementine_Marsh.jpg/revision/latest?cb=20201104064724",
 	},
 	{
 		title: "V",
@@ -37,7 +37,7 @@ const listGames = [
 		title: "Chun-Li",
 		jeu: "Street Fighter",
 		imageUrl:
-			"https://www.candb.com/site/candb/images/artwork/Chun-Li-Street-Fighter-IV-Capcom.jpg",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtb311YqWJkD6BO5ERORw9nZikI_b071lPA&usqp=CAU",
 	},
 ]
 
