@@ -38,35 +38,38 @@ const listGames = [
 		jeu: "Street Fighter",
 		imageUrl:
 			"https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F07%2F20230602023544_1-968x544.jpg&w=3840&q=75",
-	},
+		link:"https://www.youtube.com/watch?v=EqNu3Kxdwgg",
+		},
 ]
 
 listGames.forEach((game, index) => {
     divEnsea.innerHTML += `
         <div class="col">
             <article class="card shadow-sm">
-                <img src="${game.imageUrl}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"> ${game.title}</h5> <!-- Modification ici -->
-                    <p class="card-text">Jeu: ${game.jeu}</p>
-                    <div class="btn-group">
-                        <button
-                            type="button"
-                            class="btn btn-sm btn-outline-dark view"
-                            data-bs-toggle="modal" data-bs-target="#editModal"
-                            data-index="${index}"
-                        >
-                            View
-                        </button>
-                        <button
-                            type="button"
-                            class="btn btn-sm btn-outline-dark edit"
-                            data-bs-toggle="modal" data-bs-target="#editModal"
-                        >
-                            Edit
-                        </button>
-                    </div>
-                </div>
+				<a href="${game.link}" target="_blank">
+					<img src="${game.imageUrl}" class="card-img-top" alt="...">
+				</a>
+					<div class="card-body">
+						<h5 class="card-title"> ${game.title}</h5> <!-- Modification ici -->
+						<p class="card-text">Jeu: ${game.jeu}</p>
+						<div class="btn-group">
+							<button
+								type="button"
+								class="btn btn-sm btn-outline-dark view"
+								data-bs-toggle="modal" data-bs-target="#editModal"
+								data-index="${index}"
+							>
+								View
+							</button>
+							<button
+								type="button"
+								class="btn btn-sm btn-outline-dark edit"
+								data-bs-toggle="modal" data-bs-target="#editModal"
+							>
+								Edit
+							</button>
+						</div>
+					</div>
             </article>
         </div>`;
 })
