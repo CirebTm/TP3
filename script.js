@@ -7,7 +7,7 @@ const listGames = [
 		jeu: "A Plague Tale",
 		imageUrl:
 			"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/03/plague-tale-requiem-interview-amicia-va-wasd-550x309.jpg",
-		link:"hhttps://www.youtube.com/watch?v=vL5BzOF2Iw0",
+		link:"https://www.youtube.com/watch?v=vL5BzOF2Iw0",
 	},
 	{
 		title: "Clementine",
