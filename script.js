@@ -24,7 +24,7 @@ const listGames = [
 		title: "2B",
 		jeu: "NieR Automata",
 		imageUrl:
-			"https://motionbgs.com/i/c/960x540/media/761/anime-nier-automata.jpg",
+			"hhttps://cdn.wccftech.com/wp-content/uploads/2015/10/000.jpg",
 	},
 
 	{
