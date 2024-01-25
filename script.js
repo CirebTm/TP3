@@ -37,7 +37,7 @@ const listGames = [
 		title: "Chun-Li",
 		jeu: "Street Fighter",
 		imageUrl:
-			"https://lemagjeuxhightech.com/wp-content/uploads/2023/05/SF6-World-Tour-Master-Chun-Li-770x472.png",
+			"https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F07%2F20230602023544_1-968x544.jpg&w=3840&q=75",
 	},
 ]
 
