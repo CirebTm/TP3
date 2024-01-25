@@ -112,7 +112,7 @@ const catchEdit = (i) => {
 
              <div class="mb-3">
                 <label for="jeu" class="form-label">Edit jeu</label>
-                <input type="number" class="form-control" id="jeu" aria-describedby= value="${listGames[i].jeu}" >
+                <input type="text" class="form-control" id="jeu" aria-describedby= value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 
