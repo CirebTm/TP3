@@ -12,7 +12,7 @@ const listGames = [
 		title: "Clementine",
 		jeu: "The Walking Dead",
 		imageUrl:
-			"https://i.pinimg.com/736x/f8/7d/97/f87d97d2280e1cc6b224034fb7deac62.jpg",
+			"https://i1.sndcdn.com/artworks-000360443532-elpl9r-t500x500.jpg",
 	},
 	{
 		title: "V",
@@ -24,7 +24,7 @@ const listGames = [
 		title: "2B",
 		jeu: "NieR Automata",
 		imageUrl:
-			"https://static.wikia.nocookie.net/nier/images/c/c0/2BPrayingRein.png/revision/latest?cb=20220905234746",
+			"https://motionbgs.com/i/c/960x540/media/761/anime-nier-automata.jpg",
 	},
 
 	{
@@ -37,7 +37,7 @@ const listGames = [
 		title: "Chun-Li",
 		jeu: "Street Fighter",
 		imageUrl:
-			"https://www.candb.com/site/candb/images/artwork/Chun-Li-Street-Fighter-IV-Capcom.jpg",
+			"https://i.pinimg.com/736x/10/3b/59/103b598c7f7b93caa9cb6b3621736cc1.jpg",
 	},
 ]
 
