@@ -24,7 +24,7 @@ const listGames = [
 		title: "2B",
 		jeu: "NieR Automata",
 		imageUrl:
-			"hhttps://cdn.wccftech.com/wp-content/uploads/2015/10/000.jpg",
+			"https://cdn.wccftech.com/wp-content/uploads/2015/10/000.jpg",
 	},
 
 	{
