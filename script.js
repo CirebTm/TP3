@@ -7,24 +7,28 @@ const listGames = [
 		jeu: "A Plague Tale",
 		imageUrl:
 			"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/03/plague-tale-requiem-interview-amicia-va-wasd-550x309.jpg",
+		link:"hhttps://www.youtube.com/watch?v=vL5BzOF2Iw0",
 	},
 	{
 		title: "Clementine",
 		jeu: "The Walking Dead",
 		imageUrl:
 			"https://cdnb.artstation.com/p/assets/covers/images/013/075/499/large/grace-hsin-clem-thumbnail.jpg?1537941224",
+		link:"https://www.youtube.com/watch?v=WjFqYiGQxvw",
 	},
 	{
 		title: "V",
 		jeu: "Cyberpunk 2077",
 		imageUrl:
 			"https://www.jvfrance.com/wp-content/uploads/2020/12/Cyberpunk-2077-hotfix-1.05-patchnote-fr-1.jpg",
+		link:"https://www.youtube.com/watch?v=rouKZFuXQy4",
 	},
 	{
 		title: "2B",
 		jeu: "NieR Automata",
 		imageUrl:
 			"https://cdn.wccftech.com/wp-content/uploads/2015/10/000.jpg",
+		link:"https://www.youtube.com/watch?v=j6661beJnZw",
 	},
 
 	{
@@ -32,6 +36,7 @@ const listGames = [
 		jeu: "Resident Evil",
 		imageUrl:
 			"https://steamuserimages-a.akamaihd.net/ugc/999178538946271784/1049032FCC747EB8DE046C665DCFADE218121503/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+		link:"https://www.youtube.com/watch?v=Eflb1X-5Q2o",
 	},
 	{
 		title: "Chun-Li",
@@ -39,7 +44,7 @@ const listGames = [
 		imageUrl:
 			"https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F07%2F20230602023544_1-968x544.jpg&w=3840&q=75",
 		link:"https://www.youtube.com/watch?v=EqNu3Kxdwgg",
-		},
+	},
 ]
 
 listGames.forEach((game, index) => {
