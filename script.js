@@ -3,25 +3,37 @@ const divEnsea = document.querySelector(".div-ensea")
 const listGames = [
 	{
 		title: "Clementine",
-		jeux: "The Walking Dead",
+		jeu: "The Walking Dead",
 		imageUrl:
 			"https://store-images.s-microsoft.com/image/apps.3117.14492969036550054.5a1d40f5-fe0d-427a-bd14-9a9ed15a423c.f601beb2-973f-47de-ad1a-ccec296ee4d1?q=90&w=480&h=270",
 	},
 	{
 		title: "Amicia",
-		jeux: "A Plague Tale",
+		jeu: "A Plague Tale",
 		imageUrl:
 			"https://i.guim.co.uk/img/media/4cd2e3dfef9da0adb8f4ea1294d4d1097f50bd63/152_0_2234_1342/master/2234.jpg?width=1200&quality=85&auto=format&fit=max&s=e556f1df87e5634ae249d37073a327e1",
 	},
 	{
 		title: "V",
-		jeux: "Cyberpunk 2077",
+		jeu: "Cyberpunk 2077",
 		imageUrl:
 			"https://www.dexerto.com/cdn-cgi/image/width=1080,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2021/12/10/alan-wake-2.jpg",
 	},
 	{
 		title: "2B",
-		jeux: "NieR Automata",
+		jeu: "NieR Automata",
+		imageUrl:
+			"https://gaming-cdn.com/images/products/2284/orig/half-life-2-pc-mac-game-steam-cover.jpg?v=1650555068",
+	},
+	{
+		title: "Chun-Li",
+		jeu: "Street Fighter 6",
+		imageUrl:
+			"https://gaming-cdn.com/images/products/2284/orig/half-life-2-pc-mac-game-steam-cover.jpg?v=1650555068",
+	},
+	{
+		title: "Ada Wong",
+		jeu: "Resident Evil 4",
 		imageUrl:
 			"https://gaming-cdn.com/images/products/2284/orig/half-life-2-pc-mac-game-steam-cover.jpg?v=1650555068",
 	},
@@ -34,7 +46,7 @@ listGames.forEach((game, index) => {
                 <img src="${game.imageUrl}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nom: ${game.title}</h5> <!-- Modification ici -->
-                    <p class="card-text">Année: ${game.year}</p>
+                    <p class="card-text">jeu: ${game.jeu}</p>
                     <div class="btn-group">
                         <button
                             type="button"
@@ -70,9 +82,9 @@ const btnEditArray = document.querySelectorAll(".edit")
 
 // function pour lancer chaque fois que on click sur le btn "view"
 const catchView = (i) => {
-    modalTitle.textContent = "Nom: " + listGames[i].title; // Modification ici
+    modalTitle.textContent = listGames[i].title; // Modification ici
     modalBody.innerHTML = `<img src="${listGames[i].imageUrl}" class="img-fluid"  />`;
-    modalBody.innerHTML += `<p class="mt-2"> Année: ${listGames[i].year} </p>`;
+    modalBody.innerHTML += `<p class="mt-2"> Jeu: ${listGames[i].jeu} </p>`;
     modalFooter.innerHTML = `
         <button
             type="button"
@@ -97,14 +109,14 @@ const catchEdit = (i) => {
             </div>
 
              <div class="mb-3">
-                <label for="year" class="form-label">Edit Year</label>
-                <input type="number" class="form-control" id="year" aria-describedby="year" value="${listGames[i].year}" >
+                <label for="jeu" class="form-label">Edit jeu</label>
+                <input type="number" class="form-control" id="jeu" aria-describedby="jeu" value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 
              <div class="mb-3">
                 <label for="imageUrl" class="form-label">Edit Image Url</label>
-                <input type="text" class="form-control" id="imageUrl" aria-describedby="year" value="${listGames[i].imageUrl}" >
+                <input type="text" class="form-control" id="imageUrl" aria-describedby="jeu" value="${listGames[i].imageUrl}" >
                 <img src="${listGames[i].imageUrl}" class="img-thumbnail w-50 mt-2" />
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
@@ -130,11 +142,11 @@ btnEditArray.forEach((btn, index) => {
 		const saveBtn = document.querySelector(".submit")
 		saveBtn.addEventListener("click", () => {
 			const newTitle = document.querySelector("form").title.value
-			const newYear = document.querySelector("form").year.value
+			const newJeu = document.querySelector("form").jeu.value
 			const newImageUrl = document.querySelector("form").imageUrl.value
 
 			/* form validation  */
-			if (newTitle === "" || newYear === "" || newImageUrl === "") {
+			if (newTitle === "" || newJeu === "" || newImageUrl === "") {
 				alert("no empty !!!")
 				return
 			}
@@ -143,7 +155,7 @@ btnEditArray.forEach((btn, index) => {
 
 			if (
 				!regex.test(newTitle) ||
-				!regex.test(newYear) ||
+				!regex.test(newJeu) ||
 				!regex.test(newImageUrl)
 			) {
 				alert("pas de truc bizzare!")
@@ -151,12 +163,12 @@ btnEditArray.forEach((btn, index) => {
 			}
 			/*  save changes  */
 			listGames[index].title = newTitle
-			listGames[index].year = newYear
+			listGames[index].jeu = newJeu
 			listGames[index].imageUrl = newImageUrl
 			document.querySelectorAll(".card-title")[index].innerHTML = newTitle
 			document.querySelectorAll(".card-text")[
 				index
-			].innerHTML = `Year: ${newYear}`
+			].innerHTML = `Jeu: ${newJeu}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 		})
