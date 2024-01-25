@@ -1,41 +1,43 @@
 const divEnsea = document.querySelector(".div-ensea")
 
 const listGames = [
-	{
-		title: "Clementine",
-		jeu: "The Walking Dead",
-		imageUrl:
-			"https://store-images.s-microsoft.com/image/apps.3117.14492969036550054.5a1d40f5-fe0d-427a-bd14-9a9ed15a423c.f601beb2-973f-47de-ad1a-ccec296ee4d1?q=90&w=480&h=270",
-	},
+
 	{
 		title: "Amicia",
 		jeu: "A Plague Tale",
 		imageUrl:
-			"https://i.guim.co.uk/img/media/4cd2e3dfef9da0adb8f4ea1294d4d1097f50bd63/152_0_2234_1342/master/2234.jpg?width=1200&quality=85&auto=format&fit=max&s=e556f1df87e5634ae249d37073a327e1",
+			"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/03/plague-tale-requiem-interview-amicia-va-wasd-550x309.jpg",
+	},
+	{
+		title: "Clementine",
+		jeu: "The Walking Dead",
+		imageUrl:
+			"https://i.pinimg.com/736x/f8/7d/97/f87d97d2280e1cc6b224034fb7deac62.jpg",
 	},
 	{
 		title: "V",
 		jeu: "Cyberpunk 2077",
 		imageUrl:
-			"https://www.dexerto.com/cdn-cgi/image/width=1080,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2021/12/10/alan-wake-2.jpg",
+			"https://www.jvfrance.com/wp-content/uploads/2020/12/Cyberpunk-2077-hotfix-1.05-patchnote-fr-1.jpg",
 	},
 	{
 		title: "2B",
 		jeu: "NieR Automata",
 		imageUrl:
-			"https://gaming-cdn.com/images/products/2284/orig/half-life-2-pc-mac-game-steam-cover.jpg?v=1650555068",
+			"https://static.wikia.nocookie.net/nier/images/c/c0/2BPrayingRein.png/revision/latest?cb=20220905234746",
+	},
+
+	{
+		title: "Jill Valentine",
+		jeu: "Resident Evil",
+		imageUrl:
+			"https://steamuserimages-a.akamaihd.net/ugc/999178538946271784/1049032FCC747EB8DE046C665DCFADE218121503/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
 	},
 	{
 		title: "Chun-Li",
-		jeu: "Street Fighter 6",
+		jeu: "Street Fighter",
 		imageUrl:
-			"https://gaming-cdn.com/images/products/2284/orig/half-life-2-pc-mac-game-steam-cover.jpg?v=1650555068",
-	},
-	{
-		title: "Ada Wong",
-		jeu: "Resident Evil 4",
-		imageUrl:
-			"https://gaming-cdn.com/images/products/2284/orig/half-life-2-pc-mac-game-steam-cover.jpg?v=1650555068",
+			"https://www.candb.com/site/candb/images/artwork/Chun-Li-Street-Fighter-IV-Capcom.jpg",
 	},
 ]
 
@@ -45,8 +47,8 @@ listGames.forEach((game, index) => {
             <article class="card shadow-sm">
                 <img src="${game.imageUrl}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Nom: ${game.title}</h5> <!-- Modification ici -->
-                    <p class="card-text">jeu: ${game.jeu}</p>
+                    <h5 class="card-title"> ${game.title}</h5> <!-- Modification ici -->
+                    <p class="card-text">Jeu: ${game.jeu}</p>
                     <div class="btn-group">
                         <button
                             type="button"
@@ -110,13 +112,13 @@ const catchEdit = (i) => {
 
              <div class="mb-3">
                 <label for="jeu" class="form-label">Edit jeu</label>
-                <input type="number" class="form-control" id="jeu" aria-describedby="Jeu" value="${listGames[i].jeu}" >
+                <input type="number" class="form-control" id="jeu" aria-describedby= value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 
              <div class="mb-3">
                 <label for="imageUrl" class="form-label">Edit Image Url</label>
-                <input type="text" class="form-control" id="imageUrl" aria-describedby="Jeu" value="${listGames[i].imageUrl}" >
+                <input type="text" class="form-control" id="imageUrl" aria-describedby= value="${listGames[i].imageUrl}" >
                 <img src="${listGames[i].imageUrl}" class="img-thumbnail w-50 mt-2" />
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
