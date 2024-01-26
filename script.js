@@ -126,7 +126,7 @@ const catchEdit = (i) => {
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 
-             <div class="mb-3">
+            <div class="mb-3">
                 <label for="jeu" class="form-label">Edit jeu</label>
                 <input type="text" class="form-control" id="jeu" aria-describedby= value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
@@ -138,12 +138,18 @@ const catchEdit = (i) => {
 				<div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
 			</div>
 
-             <div class="mb-3">
+            <div class="mb-3">
                 <label for="imageUrl" class="form-label">Edit Image Url</label>
                 <input type="text" class="form-control" id="imageUrl" aria-describedby= value="${listGames[i].imageUrl}" >
                 <img src="${listGames[i].imageUrl}" class="img-thumbnail w-50 mt-2" />
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
+			<div class="mb-3">
+   				<label for="link" class="form-label">Edit Link</label>
+				<input type="text" class="form-control" id="link" aria-describedby="link" value="${listGames[i].link}">
+				<div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
+			</div>
+
     `
 	modalFooter.innerHTML = `
            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -169,6 +175,7 @@ btnEditArray.forEach((btn, index) => {
 			const newJeu = document.querySelector("form").jeu.value
 			const newDescription = document.querySelector("form").description.value;
 			const newImageUrl = document.querySelector("form").imageUrl.value
+			const newLink = document.querySelector("form").link.value;
 			
 
 			/* form validation  */
@@ -193,11 +200,12 @@ btnEditArray.forEach((btn, index) => {
 			listGames[index].jeu = newJeu
 			listGames[index].description = newDescription;
 			listGames[index].imageUrl = newImageUrl
+			listGames[index].link = newLink;
 						document.querySelectorAll(".card-title")[index].innerHTML = newTitle
 			document.querySelectorAll(".card-text")[
 				index
 			].innerHTML = `${newJeu}`
-			document.querySelectorAll(".card-title")[index].innerHTML = `${newDescription}`
+			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 		})
