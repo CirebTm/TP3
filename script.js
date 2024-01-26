@@ -7,7 +7,7 @@ const listGames = [
 		jeu: "A Plague Tale",
 		imageUrl:
 			"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/03/plague-tale-requiem-interview-amicia-va-wasd-550x309.jpg",
-		description: "Amicia, l'héroïne de A Plague Tale: Innocence et A Plague Tale Requiem, est une adolescente intelligente et déterminée évoluant dans un monde médiéval en proie à la peste.\n Sa quête pour protéger son frère Hugo dévoile une histoire captivante, mettant en avant son courage face à des défis surnaturels. Une expérience immersive qui révèle la force émotionnelle d'un personnage inoubliable.",
+		description: "\nAmicia est une adolescente intelligente et déterminée évoluant dans un monde médiéval en proie à la peste.\n Sa quête pour protéger son frère Hugo dévoile une histoire captivante, mettant en avant son courage face à des défis surnaturels. Une expérience immersive qui révèle la force émotionnelle d'un personnage inoubliable.",
 		link:"https://www.youtube.com/watch?v=vL5BzOF2Iw0",
 		
 	},
@@ -16,7 +16,7 @@ const listGames = [
 		jeu: "The Walking Dead",
 		imageUrl:
 			"https://cdnb.artstation.com/p/assets/covers/images/013/075/499/large/grace-hsin-clem-thumbnail.jpg?1537941224",
-		description:"Clémentine se démarque en tant que jeune survivante astucieuse et courageuse dans un monde apocalyptique infesté de zombies. Son parcours captivant, du rôle de protégée à celui de protectrice, offre une expérience immersive riche en émotions.\n À travers des choix moraux difficiles et des relations complexes, Clémentine incarne la résilience et la détermination, faisant de son personnage une raison convaincante de plonger dans l'univers captivant de ce jeu emblématique.",
+		description:"\nClémentine se démarque en tant que jeune survivante à la fois brave et chaleureuse  dans un monde apocalyptique infesté de zombies. Son parcours captivant, du rôle de protégée à celui de protectrice, offre une expérience immersive riche en émotions.\n À travers des choix moraux difficiles et des relations complexes, Clémentine incarne la résilience et la maturité, faisant de son personnage une raison convaincante de plonger dans l'univers captivant de ce jeu emblématique.",
 		link:"https://www.youtube.com/watch?v=WjFqYiGQxvw",
 	},
 	{
@@ -24,7 +24,7 @@ const listGames = [
 		jeu: "Cyberpunk 2077",
 		imageUrl:
 			"https://www.jvfrance.com/wp-content/uploads/2020/12/Cyberpunk-2077-hotfix-1.05-patchnote-fr-1.jpg",
-		description: "V incarne une mercenaire audacieuse et charismatique dans le monde futuriste de Night City. Dotée d'une personnalité forte, lutte pour sa survie à travers les rues dangereuses de Night City. Dans une quête pour s'imposer dans ce monde futuriste, elle doit naviguer habilement entre les alliances, les complots et les choix moraux difficiles. L'histoire immersive de V est teintée de moments poignants où la survie personnelle devient la clé de son parcours, ajoutant une tension palpable à cette expérience captivante.",
+		description: "\nV incarne une mercenaire audacieuse et charismatique dans le monde futuriste de Night City. Dotée d'une personnalité forte, lutte pour sa survie à travers les rues dangereuses de Night City. Dans une quête pour s'imposer dans ce monde futuriste, elle doit naviguer habilement entre les alliances, les complots et les choix moraux difficiles. L'histoire immersive de V est teintée de moments poignants où la survie personnelle devient la clé de son parcours, ajoutant une tension palpable à cette expérience captivante.",
 		link:"https://www.youtube.com/watch?v=rouKZFuXQy4",
 	},
 	{
@@ -32,7 +32,7 @@ const listGames = [
 		jeu: "NieR Automata",
 		imageUrl:
 			"https://cdn.wccftech.com/wp-content/uploads/2015/10/000.jpg",
-		description:"2B incarne une androïde stoïque et gracieuse dans un monde post-apocalyptique. Son apparence élégante cache une profondeur émotionnelle alors qu'elle se bat contre des machines hostiles pour sauver ce qui reste de l'humanité. Dotée d'une épée et d'une grâce exceptionnelle, elle combat au coté de son partenaire tactique, 9S.",
+		description:"\n2B incarne une androïde stoïque et gracieuse dans un monde post-apocalyptique. Son apparence élégante cache une profondeur émotionnelle alors qu'elle se bat contre des machines hostiles pour sauver ce qui reste de l'humanité. Dotée d'une épées, elle combat au coté de son partenaire tactique, 9S.",
 		link:"https://www.youtube.com/watch?v=j6661beJnZw",
 	},
 
