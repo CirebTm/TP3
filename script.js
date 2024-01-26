@@ -24,7 +24,7 @@ const listGames = [
 		jeu: "Cyberpunk 2077",
 		imageUrl:
 			"https://www.jvfrance.com/wp-content/uploads/2020/12/Cyberpunk-2077-hotfix-1.05-patchnote-fr-1.jpg",
-		description: "V incarne une mercenaire audacieuse et charismatique dans le monde futuriste de Night City. Dotée d'une personnalité forte, lutte pour sa survie à travers les rues dangereuses de Night City. Dans une quête pour s'imposer dans ce monde futuriste, elle doit naviguer habilement entre les alliances, les complots et les choix moraux difficiles. L'histoire immersive de V est teintée de moments poignants où la survie personnelle devient la clé de son parcours, ajoutant une tension palpable à cette expérience captivante"
+		description: "V incarne une mercenaire audacieuse et charismatique dans le monde futuriste de Night City. Dotée d'une personnalité forte, lutte pour sa survie à travers les rues dangereuses de Night City. Dans une quête pour s'imposer dans ce monde futuriste, elle doit naviguer habilement entre les alliances, les complots et les choix moraux difficiles. L'histoire immersive de V est teintée de moments poignants où la survie personnelle devient la clé de son parcours, ajoutant une tension palpable à cette expérience captivante.",
 		link:"https://www.youtube.com/watch?v=rouKZFuXQy4",
 	},
 	{
