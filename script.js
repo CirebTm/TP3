@@ -58,7 +58,7 @@ listGames.forEach((game, index) => {
     divEnsea.innerHTML += `
         <div class="col">
             <article class="card shadow-sm">
-				<a href="${game.link}" target="_blank" classe="glink">
+				<a href="${game.link}" target="_blank">
 					<img src="${game.imageUrl}" class="card-img-top" alt="...">
 				</a>
 					<div class="card-body">
@@ -120,11 +120,6 @@ const catchEdit = (i) => {
 	modalTitle.textContent = "Edit Mode"
 	modalBody.innerHTML = `
         <form>
-			<div class="mb-3">
-				<label for="link" class="form-label">Edit Link</label>
-				<input type="text" class="form-control" id="link" value="${listGames[i].link}">
-				<a href="${listGames[i].link}" class="gglink" />
-			</div>
 
             <div class="mb-3">
                 <label for="title" class="form-label">Edit Title</label>
@@ -142,6 +137,11 @@ const catchEdit = (i) => {
 				<label for="description" class="form-label">Edit Description</label>
 				<input type="text" class="form-control" id="description" aria-describedby= value="${listGames[i].description}" >
 				<div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
+			</div>
+
+			<div class="mb-3">
+				<label for="link" class="form-label">Edit Link</label>
+				<input type="text" class="form-control" id="link" value="${listGames[i].link}">
 			</div>
 
              <div class="mb-3">
@@ -209,7 +209,7 @@ btnEditArray.forEach((btn, index) => {
 			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
-			document.querySelectorAll(".glink")[index].href= newLink
+			document.querySelectorAll(".card-bordy a")[index].href= newLink;
 		})
 	})
 })
