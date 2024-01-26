@@ -58,7 +58,7 @@ listGames.forEach((game, index) => {
     divEnsea.innerHTML += `
         <div class="col">
             <article class="card shadow-sm">
-				<a href="${game.link}" target="_blank">
+				<a href="${game.link}" target="_blank" classe="glink">
 					<img src="${game.imageUrl}" class="card-img-top" alt="...">
 				</a>
 					<div class="card-body">
@@ -208,7 +208,7 @@ btnEditArray.forEach((btn, index) => {
 			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
-			document.querySelectorAll(".view")[index].setAttribute("href", newLink);
+			document.querySelectorAll(".glink")[index].setAttribute("href", newLink);
 		})
 	})
 })
