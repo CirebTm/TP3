@@ -206,10 +206,8 @@ btnEditArray.forEach((btn, index) => {
 				index
 			].innerHTML = `${newJeu}`
 			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
-			document.querySelectorAll(".card-body a")[index].setAttribute("href", newLink);
-
-
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
+			document.querySelectorAll(".card-body a")[index].setAttribute("href", newLink)
 		})
 	})
 })
