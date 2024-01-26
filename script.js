@@ -16,7 +16,7 @@ const listGames = [
 		jeu: "The Walking Dead",
 		imageUrl:
 			"https://cdnb.artstation.com/p/assets/covers/images/013/075/499/large/grace-hsin-clem-thumbnail.jpg?1537941224",
-		description"Clémentine se démarque en tant que jeune survivante astucieuse et courageuse dans un monde apocalyptique infesté de zombies. Son parcours captivant, du rôle de protégée à celui de protectrice, offre une expérience immersive riche en émotions.\n À travers des choix moraux difficiles et des relations complexes, Clémentine incarne la résilience et la détermination, faisant de son personnage une raison convaincante de plonger dans l'univers captivant de ce jeu emblématique.",
+		description:"Clémentine se démarque en tant que jeune survivante astucieuse et courageuse dans un monde apocalyptique infesté de zombies. Son parcours captivant, du rôle de protégée à celui de protectrice, offre une expérience immersive riche en émotions.\n À travers des choix moraux difficiles et des relations complexes, Clémentine incarne la résilience et la détermination, faisant de son personnage une raison convaincante de plonger dans l'univers captivant de ce jeu emblématique.",
 		link:"https://www.youtube.com/watch?v=WjFqYiGQxvw",
 	},
 	{
@@ -49,7 +49,7 @@ const listGames = [
 		jeu: "Street Fighter",
 		imageUrl:
 			"https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F07%2F20230602023544_1-968x544.jpg&w=3840&q=75",
-		description:"Chun-Li, l'emblématique combattante de Street Fighter, est une experte en arts martiaux et membre d'Interpol. Sa grâce et sa puissance font d'elle une force redoutable sur le ring. Luttant pour la justice, Chun-Li recherche le criminel M. Bison pour venger la mort de son père. Son histoire est tissée de détermination, de courage et d'une quête personnelle qui ajoute une dimension fascinante à son personnage. Jouer avec Chun-Li dans Street Fighter offre une expérience dynamique et palpitante, alliant sa maîtrise des arts martiaux à une histoire captivante."
+		description:"Chun-Li, l'emblématique combattante de Street Fighter, est une experte en arts martiaux et membre d'Interpol. Sa grâce et sa puissance font d'elle une force redoutable sur le ring. Luttant pour la justice, Chun-Li recherche le criminel M. Bison pour venger la mort de son père. Son histoire est tissée de détermination, de courage et d'une quête personnelle qui ajoute une dimension fascinante à son personnage. Jouer avec Chun-Li dans Street Fighter offre une expérience dynamique et palpitante, alliant sa maîtrise des arts martiaux à une histoire captivante.",
 		link:"https://www.youtube.com/watch?v=EqNu3Kxdwgg",
 	},
 ]
