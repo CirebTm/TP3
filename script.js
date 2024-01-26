@@ -120,6 +120,11 @@ const catchEdit = (i) => {
 	modalTitle.textContent = "Edit Mode"
 	modalBody.innerHTML = `
         <form>
+			<div class="mb-3">
+				<label for="link" class="form-label">Edit Link</label>
+				<input type="text" class="form-control" id="link" value="${listGames[i].link}">
+			</div>
+
             <div class="mb-3">
                 <label for="title" class="form-label">Edit Title</label>
                 <input type="text" class="form-control" id="title" aria-describedby="title" value="${listGames[i].title}" >
@@ -169,6 +174,7 @@ btnEditArray.forEach((btn, index) => {
 			const newJeu = document.querySelector("form").jeu.value
 			const newDescription = document.querySelector("form").description.value;
 			const newImageUrl = document.querySelector("form").imageUrl.value
+			const newLink = document.querySelector("form").link.value;
 			
 
 			/* form validation  */
@@ -193,6 +199,8 @@ btnEditArray.forEach((btn, index) => {
 			listGames[index].jeu = newJeu
 			listGames[index].description = newDescription;
 			listGames[index].imageUrl = newImageUrl
+			listGames[index].link = newLink;
+
 						document.querySelectorAll(".card-title")[index].innerHTML = newTitle
 			document.querySelectorAll(".card-text")[
 				index
@@ -200,6 +208,7 @@ btnEditArray.forEach((btn, index) => {
 			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
+			document.querySelectorAll(".view")[index].setAttribute("href", newLink);
 		})
 	})
 })
