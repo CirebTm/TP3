@@ -123,7 +123,7 @@ const catchEdit = (i) => {
 			<div class="mb-3">
 				<label for="link" class="form-label">Edit Link</label>
 				<input type="text" class="form-control" id="link" value="${listGames[i].link}">
-				<a href="${listGames[i].link}" class="glink" />
+				<a href="${listGames[i].link}" class="gglink" />
 			</div>
 
             <div class="mb-3">
