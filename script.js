@@ -128,7 +128,7 @@ const catchEdit = (i) => {
 
             <div class="mb-3">
                 <label for="jeu" class="form-label">Edit jeu</label>
-                <input type="text" class="form-control" id="jeu" aria-describedby="jeu" value="${listGames[i].jeu}" >
+                <input type="text" class="form-control" id="jeu" aria-describedby= value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 
@@ -145,8 +145,8 @@ const catchEdit = (i) => {
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 			<div class="mb-3">
-   				<label for="link" class="form-label">Edit Link</label>
-				<input type="text" class="form-control" id="link" aria-describedby="link" value="${listGames[i].link}">
+   				<label for="link" class="form-label">Edit link</label>
+				<input type="text" class="form-control" id="link" aria-describedby= value="${listGames[i].link}">
 				<div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
 			</div>
 
