@@ -191,6 +191,7 @@ btnEditArray.forEach((btn, index) => {
 			document.querySelectorAll(".card-text")[
 				index
 			].innerHTML = `${newJeu}`
+			document.querySelectorAll(".card-title")[index].innerHTML = newDescription
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 		})
