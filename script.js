@@ -128,7 +128,7 @@ const catchEdit = (i) => {
 
             <div class="mb-3">
                 <label for="jeu" class="form-label">Edit jeu</label>
-                <input type="text" class="form-control" id="jeu" aria-describedby= value="${listGames[i].jeu}" >
+                <input type="text" class="form-control" id="jeu" aria-describedby="jeu" value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 
@@ -206,7 +206,7 @@ btnEditArray.forEach((btn, index) => {
 				index
 			].innerHTML = `${newJeu}`
 			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
-			document.querySelectorAll(".card-body a")[index].innerHTML = `${newLink}`
+			document.querySelectorAll(".card-body a")[index].href = `${newLink}`
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 		})
 	})
