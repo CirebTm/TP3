@@ -24,7 +24,7 @@ const listGames = [
 		jeu: "Cyberpunk 2077",
 		imageUrl:
 			"https://www.jvfrance.com/wp-content/uploads/2020/12/Cyberpunk-2077-hotfix-1.05-patchnote-fr-1.jpg",
-		description: " V incarne une mercenaire audacieuse et charismatique dans le monde futuriste de Night City. Dotée d'une personnalité forte, elle lutte pour sa survie à travers les rues dangereuses de Night City. Dans une quête pour s'imposer dans ce monde futuriste, elle doit naviguer habilement entre les alliances, les complots et les choix moraux difficiles. L'histoire immersive de V est teintée de moments poignants où la survie personnelle devient la clé de son parcours, ajoutant une tension palpable à cette expérience captivante.",
+		description: " \n V incarne une mercenaire audacieuse et charismatique dans le monde futuriste de Night City. Dotée d'une personnalité forte, lutte pour sa survie à travers les rues dangereuses de Night City. Dans une quête pour s'imposer dans ce monde futuriste, elle doit naviguer habilement entre les alliances, les complots et les choix moraux difficiles. L'histoire immersive de V est teintée de moments poignants où la survie personnelle devient la clé de son parcours, ajoutant une tension palpable à cette expérience captivante.",
 		link:"https://www.youtube.com/watch?v=rouKZFuXQy4",
 	},
 	{
@@ -32,7 +32,7 @@ const listGames = [
 		jeu: "NieR Automata",
 		imageUrl:
 			"https://cdn.wccftech.com/wp-content/uploads/2015/10/000.jpg",
-		description:" 2B incarne une androïde stoïque et gracieuse dans un monde post-apocalyptique. Son apparence élégante cache une profondeur émotionnelle alors qu'elle se bat contre des machines hostiles pour sauver ce qui reste de l'humanité. Dotée d'une épées, elle combat au coté de son partenaire tactique, 9S.",
+		description:" \n 2B incarne une androïde stoïque et gracieuse dans un monde post-apocalyptique. Son apparence élégante cache une profondeur émotionnelle alors qu'elle se bat contre des machines hostiles pour sauver ce qui reste de l'humanité. Dotée d'une épées, elle combat au coté de son partenaire tactique, 9S.",
 		link:"https://www.youtube.com/watch?v=j6661beJnZw",
 	},
 
@@ -41,7 +41,7 @@ const listGames = [
 		jeu: "Resident Evil",
 		imageUrl:
 			"https://steamuserimages-a.akamaihd.net/ugc/999178538946271784/1049032FCC747EB8DE046C665DCFADE218121503/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
-		description:" Jill Valentine, l'emblématique héroïne de la série Resident Evil, incarne une experte en lutte contre les horreurs du bioterrorisme. Forte, intelligente et déterminée, Jill guide les joueurs à travers des cauchemars terrifiants tout en résolvant des énigmes et en affrontant des créatures malveillantes. Son courage face à l'horreur et son rôle central dans la lutte pour la survie font de Jill Valentine une figure incontournable, rendant chaque aventure dans l'univers de Resident Evil aussi palpitante que captivante.",
+		description:" \n Jill Valentine, l'emblématique héroïne de la série Resident Evil, incarne une experte en lutte contre les horreurs du bioterrorisme. Forte, intelligente et déterminée, Jill guide les joueurs à travers des cauchemars terrifiants tout en résolvant des énigmes et en affrontant des créatures malveillantes. Son courage face à l'horreur et son rôle central dans la lutte pour la survie font de Jill Valentine une figure incontournable, rendant chaque aventure dans l'univers de Resident Evil aussi palpitante que captivante.",
 		link:"https://www.youtube.com/watch?v=Eflb1X-5Q2o",
 	},
 	{
@@ -49,7 +49,7 @@ const listGames = [
 		jeu: "Street Fighter",
 		imageUrl:
 			"https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F07%2F20230602023544_1-968x544.jpg&w=3840&q=75",
-		description:" Chun-Li, l'emblématique combattante de Street Fighter, est une experte en arts martiaux et membre d'Interpol. Sa grâce et sa puissance font d'elle une force redoutable sur le ring. Luttant pour la justice, Chun-Li recherche le criminel M. Bison pour venger la mort de son père. Son histoire est tissée de détermination, de courage et d'une quête personnelle qui ajoute une dimension fascinante à son personnage. Jouer avec Chun-Li dans Street Fighter offre une expérience dynamique et palpitante, alliant sa maîtrise des arts martiaux à une histoire captivante.",
+		description:" \n Chun-Li, l'emblématique combattante de Street Fighter, est une experte en arts martiaux et membre d'Interpol. Sa grâce et sa puissance font d'elle une force redoutable sur le ring. Luttant pour la justice, Chun-Li recherche le criminel M. Bison pour venger la mort de son père. Son histoire est tissée de détermination, de courage et d'une quête personnelle qui ajoute une dimension fascinante à son personnage. Jouer avec Chun-Li dans Street Fighter offre une expérience dynamique et palpitante, alliant sa maîtrise des arts martiaux à une histoire captivante.",
 		link:"https://www.youtube.com/watch?v=EqNu3Kxdwgg",
 	},
 ]
@@ -145,8 +145,8 @@ const catchEdit = (i) => {
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
 			<div class="mb-3">
-   				<label for="link" class="form-label">Edit link</label>
-				<input type="text" class="form-control" id="link" aria-describedby= value="${listGames[i].link}">
+   				<label for="link" class="form-label">Edit Link</label>
+				<input type="text" class="form-control" id="link" aria-describedby="link" value="${listGames[i].link}">
 				<div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
 			</div>
 
@@ -198,15 +198,17 @@ btnEditArray.forEach((btn, index) => {
 			/*  save changes  */
 			listGames[index].title = newTitle
 			listGames[index].jeu = newJeu
-			listGames[index].description = newDescription
+			listGames[index].description = newDescription;
 			listGames[index].imageUrl = newImageUrl
-			listGames[index].link = newLink
+			listGames[index].link = newLink;
 						document.querySelectorAll(".card-title")[index].innerHTML = newTitle
 			document.querySelectorAll(".card-text")[
 				index
 			].innerHTML = `${newJeu}`
 			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
-			document.querySelectorAll(".card-body a")[index].href = `${newLink}`
+			document.querySelectorAll(".card-body a")[index].setAttribute("href", newLink);
+
+
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 		})
 	})
