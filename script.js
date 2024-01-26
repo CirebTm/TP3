@@ -58,7 +58,7 @@ listGames.forEach((game, index) => {
     divEnsea.innerHTML += `
         <div class="col">
             <article class="card shadow-sm">
-				<a href="${game.link}" target="_blank">
+				<a href="${game.link}" target="_blank" class="card-link">
 					<img src="${game.imageUrl}" class="card-img-top" alt="...">
 				</a>
 					<div class="card-body">
@@ -210,7 +210,7 @@ btnEditArray.forEach((btn, index) => {
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 			// Mettre à jour le lien dans la balise <a>
-			document.querySelectorAll(".card-body a")[index].href = newLink;
+			document.querySelectorAll(".card-link")[index].href = newLink;
 
 		})
 	})
