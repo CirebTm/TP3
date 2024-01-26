@@ -7,8 +7,9 @@ const listGames = [
 		jeu: "A Plague Tale",
 		imageUrl:
 			"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/03/plague-tale-requiem-interview-amicia-va-wasd-550x309.jpg",
-		link:"https://www.youtube.com/watch?v=vL5BzOF2Iw0",
 		description: "Amicia test.",
+		link:"https://www.youtube.com/watch?v=vL5BzOF2Iw0",
+		
 	},
 	{
 		title: "Clementine",
@@ -161,8 +162,9 @@ btnEditArray.forEach((btn, index) => {
 		saveBtn.addEventListener("click", () => {
 			const newTitle = document.querySelector("form").title.value
 			const newJeu = document.querySelector("form").jeu.value
-			const newImageUrl = document.querySelector("form").imageUrl.value
 			const newDescription = document.querySelector("form").value;
+			const newImageUrl = document.querySelector("form").imageUrl.value
+			
 
 			/* form validation  */
 			if (newTitle === "" || newJeu === "" || newImageUrl === "") {
@@ -183,9 +185,9 @@ btnEditArray.forEach((btn, index) => {
 			/*  save changes  */
 			listGames[index].title = newTitle
 			listGames[index].jeu = newJeu
-			listGames[index].imageUrl = newImageUrl
 			listGames[index].description = newDescription;
-			document.querySelectorAll(".card-title")[index].innerHTML = newTitle
+			listGames[index].imageUrl = newImageUrl
+						document.querySelectorAll(".card-title")[index].innerHTML = newTitle
 			document.querySelectorAll(".card-text")[
 				index
 			].innerHTML = `${newJeu}`
