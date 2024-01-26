@@ -162,12 +162,12 @@ btnEditArray.forEach((btn, index) => {
 		saveBtn.addEventListener("click", () => {
 			const newTitle = document.querySelector("form").title.value
 			const newJeu = document.querySelector("form").jeu.value
-			const newDescription = document.querySelector("form").value;
+			const newDescription = document.querySelector("form").description.value;
 			const newImageUrl = document.querySelector("form").imageUrl.value
 			
 
 			/* form validation  */
-			if (newTitle === "" || newJeu === "" || newImageUrl === "") {
+			if (newTitle === "" || newJeu === "" || newDescription === "" || newImageUrl === "") {
 				alert("no empty !!!")
 				return
 			}
@@ -176,6 +176,7 @@ btnEditArray.forEach((btn, index) => {
 
 			if (
 				!regex.test(newTitle) ||
+				!regex.test(newDescription) ||
 				!regex.test(newJeu) ||
 				!regex.test(newImageUrl)
 			) {
@@ -191,7 +192,7 @@ btnEditArray.forEach((btn, index) => {
 			document.querySelectorAll(".card-text")[
 				index
 			].innerHTML = `${newJeu}`
-			document.querySelectorAll(".card-title")[index].innerHTML = newDescription
+			document.querySelectorAll(".card-title")[index].innerHTML = `${newDescription}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
 		})
