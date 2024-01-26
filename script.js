@@ -209,7 +209,7 @@ btnEditArray.forEach((btn, index) => {
 			document.querySelectorAll(".card-text")[index].innerHTML = `${newDescription}`
 
 			document.querySelectorAll(".card-img-top")[index].src = newImageUrl
-			document.querySelectorAll(".card-bordy a")[index].href= newLink;
+			document.querySelectorAll(".card-body a")[index].href= newLink;
 		})
 	})
 })
