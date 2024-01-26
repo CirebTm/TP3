@@ -8,6 +8,7 @@ const listGames = [
 		imageUrl:
 			"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/03/plague-tale-requiem-interview-amicia-va-wasd-550x309.jpg",
 		link:"https://www.youtube.com/watch?v=vL5BzOF2Iw0",
+		description: "Amicia test.",
 	},
 	{
 		title: "Clementine",
@@ -95,6 +96,7 @@ const catchView = (i) => {
     modalTitle.textContent = listGames[i].title; // Modification ici
     modalBody.innerHTML = `<img src="${listGames[i].imageUrl}" class="img-fluid"  />`;
     modalBody.innerHTML += `<p class="mt-2"> Jeu: ${listGames[i].jeu} </p>`;
+	modalBody.innerHTML += `<p>Description: ${listGames[i].description}</p>`;
     modalFooter.innerHTML = `
         <button
             type="button"
@@ -123,6 +125,12 @@ const catchEdit = (i) => {
                 <input type="text" class="form-control" id="jeu" aria-describedby= value="${listGames[i].jeu}" >
                 <div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
             </div>
+
+			<div class="mb-3">
+				<label for="description" class="form-label">Edit Description</label>
+				<input type="text" class="form-control" id="description" aria-describedby= value="${listGames[i].description}" >
+				<div id="emailHelp" class="d-none form-text">We'll never share your email with anyone else.</div>
+			</div>
 
              <div class="mb-3">
                 <label for="imageUrl" class="form-label">Edit Image Url</label>
@@ -154,6 +162,7 @@ btnEditArray.forEach((btn, index) => {
 			const newTitle = document.querySelector("form").title.value
 			const newJeu = document.querySelector("form").jeu.value
 			const newImageUrl = document.querySelector("form").imageUrl.value
+			const newDescription = document.querySelector("form").value;
 
 			/* form validation  */
 			if (newTitle === "" || newJeu === "" || newImageUrl === "") {
@@ -175,6 +184,7 @@ btnEditArray.forEach((btn, index) => {
 			listGames[index].title = newTitle
 			listGames[index].jeu = newJeu
 			listGames[index].imageUrl = newImageUrl
+			listGames[index].description = newDescription;
 			document.querySelectorAll(".card-title")[index].innerHTML = newTitle
 			document.querySelectorAll(".card-text")[
 				index
