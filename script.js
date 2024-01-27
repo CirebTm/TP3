@@ -66,7 +66,7 @@ const listGames = [
 		title: "Yuna",
 		jeu: "Final Fantasy X",
 		imageUrl:
-			"https://lh3.googleusercontent.com/proxy/4Ym8ZyyZlRlkK0XUgYCifxrhdEgfIyr4Y0coTitUhAQxQub5Jz2IV45eaC1MJRie_YCmJl98FRneDKhjW8ZqV6KaR71NYrzyOzZkevyyXQ",
+			"https://live.staticflickr.com/5016/5529214937_34cf81dc09_b.jpg",
 		description:" Yuna rayonne de par sa grâce et sa gentillesse. Son parcours commence en tant que prêtresse maîtrisant les arts sacrés, mais elle évolue en une héroïne résolue. Sa personnalité réfléchie et empathique se mêle à une force intérieure, tandis que son histoire est façonnée par sa quête pour sauver Spira de la menace de Sin. Le courage et la compassion de Yuna font d'elle une figure inoubliable dans l'univers riche et fantastique de Final Fantasy X.",
 		link:"https://www.youtube.com/watch?v=fsDzmVA-cY0",
 	},
